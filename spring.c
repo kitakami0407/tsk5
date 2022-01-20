@@ -54,14 +54,20 @@ int main(void){
 	exit(1);
 	}
 	/*設定*/
+	/*ラベル*/
 	fprintf(gp, "unset label\n");
-	fprintf(gp, "set tics font 'Arial,20'\n");
 	fprintf(gp, "set xlabel offset 0,0\n");
 	fprintf(gp, "set ylabel offset 0,0\n");
+	/*メモリ*/
+	fprintf(gp, "set tics nomirorr font 'Arial,20'\n");
+	/*余白*/
 	fprintf(gp, "set lmargin 10\n");
 	fprintf(gp, "set bmargin 4\n");
+	/*枠線*/
 	fprintf(gp, "set border lw 2.5\n");
+	/*サイズ*/
 	fprintf(gp, "set size ratio 0.625\n");
+	/*凡例*/
 	fprintf(gp, "unset key\n");
 
 	/*描図*/
